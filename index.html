@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fernhilfe von Leon</title>
+<style>
+  :root { --text:#1d1d1f; --muted:#5b5b60; --accent:#2557d6; --warn-bg:#fff4e5; --warn-line:#e8902b; --card:#f5f6f8; --bg:#ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-print]) { --text:#ececef; --muted:#a8a8b0; --accent:#7ea2ff; --warn-bg:#3a2a14; --warn-line:#e8902b; --card:#1f2024; --bg:#131416; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:28px 16px 48px; }
+  h1 { font-size:1.9em; margin:0 0 .3em; }
+  h2 { font-size:1.25em; margin:1.8em 0 .5em; display:flex; align-items:center; gap:.45em; }
+  h2 .tag { font-size:.62em; font-weight:600; background:var(--card); color:var(--muted); padding:.15em .6em; border-radius:99px; }
+  p { margin:.6em 0; }
+  .lead { color:var(--muted); }
+  .warn { background:var(--warn-bg); border-left:5px solid var(--warn-line); border-radius:8px; padding:12px 16px; margin:1.2em 0; }
+  ol { padding-left:1.4em; margin:.5em 0; }
+  li { margin:.45em 0; }
+  li::marker { font-weight:700; color:var(--accent); }
+  .note { background:var(--card); border-radius:8px; padding:10px 14px; margin:.9em 0; font-size:.95em; }
+  .pdf { display:inline-block; margin-top:.4em; color:var(--accent); font-weight:600; text-decoration:none; }
+  .pdf:hover { text-decoration:underline; }
+  section { break-inside:avoid; }
+  .dl { display:flex; flex-wrap:wrap; gap:8px; margin:.5em 0 .3em; }
+  .dl a { background:var(--accent); color:#fff; text-decoration:none; font-weight:600; font-size:.92em; padding:7px 14px; border-radius:8px; }
+  .small { display:block; font-size:.88em; color:var(--muted); }
+  .small a, .note a { color:var(--accent); }
+  @media print { .dl a { background:none; color:var(--accent); border:1.5px solid var(--accent); padding:3px 10px; } }
+  @media print {
+    body { font-size:11.5pt; line-height:1.45; }
+    main { padding:0; max-width:none; }
+    h2 { margin-top:1.2em; }
+    .pdf { display:none; }
+    @page { size:A4; margin:16mm 16mm 14mm; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Fernhilfe von Leon</h1>
+  <p class="lead">Wenn du Hilfe am Computer oder Handy brauchst, kann ich von zu Hause aus auf deinen Bildschirm schauen und für dich klicken. Das dauert beim ersten Mal ein paar Minuten, danach geht es schnell.</p>
+  <a class="pdf" href="Fernhilfe.pdf">Als PDF herunterladen</a>
+
+  <div class="warn"><strong>Wichtigste Regel: Gib nur Zugriff, wenn du gerade selbst mit mir telefonierst.</strong> Niemand von Microsoft, deiner Bank, der Polizei oder deinem Handyanbieter ruft an und will auf deinen Computer. Wenn dich jemand anderer bittet, so ein Programm zu installieren oder dir eine Nummer vorlesen lässt: auflegen und mich anrufen.</div>
+
+  <section>
+  <h2>Am Computer <span class="tag">Windows · Mac · Linux</span></h2>
+  <ol>
+    <li>Ruf mich an.</li>
+    <li>Lade RustDesk herunter, je nach Computer:
+      <div class="dl">
+        <a href="https://github.com/rustdesk/rustdesk/releases/download/1.5.1/rustdesk-1.5.1-x86_64.exe">Windows</a>
+        <a href="https://github.com/rustdesk/rustdesk/releases/download/1.5.1/rustdesk-1.5.1-aarch64.dmg">Mac (ab 2020, Apple-Chip)</a>
+        <a href="https://github.com/rustdesk/rustdesk/releases/download/1.5.1/rustdesk-1.5.1-x86_64.dmg">Mac (älter, Intel)</a>
+        <a href="https://rustdesk.com/download">Linux / andere</a>
+      </div>
+      <span class="small">Welcher Mac? Apfel-Menü → „Über diesen Mac“: Steht dort „Chip: Apple M…“, nimm „Apple-Chip“, sonst „Intel“.</span></li>
+    <li>Öffne die heruntergeladene Datei. Unter Windows musst du nichts installieren, das Programm startet einfach.</li>
+    <li>Links im Fenster stehen <strong>„ID“</strong> (eine lange Zahl) und <strong>„Einmal-Passwort“</strong>. Lies mir beides vor.</li>
+    <li>Falls ein Fenster aufgeht, das fragt, ob du die Verbindung erlaubst: auf <strong>„Annehmen“</strong> klicken.</li>
+    <li>Jetzt sehe ich deinen Bildschirm. Wenn wir fertig sind, schließt du einfach das RustDesk-Fenster. Ohne neues Passwort komme ich danach nicht mehr rein.</li>
+  </ol>
+  <p class="note"><strong>Nur am Mac, beim ersten Mal:</strong> Der Mac fragt nach Erlaubnis für „Bildschirmaufnahme“ und „Bedienungshilfen“. Beides in den Systemeinstellungen für RustDesk einschalten und RustDesk neu starten. Das machen wir gemeinsam am Telefon.</p>
+  </section>
+
+  <section>
+  <h2>Am Android-Handy</h2>
+  <ol>
+    <li>Ruf mich an.</li>
+    <li>Installiere die App <strong>„RustDesk Remote Desktop“</strong>:
+      <div class="dl">
+        <a href="https://play.google.com/store/apps/details?id=com.carriez.flutter_hbb">Im Play Store öffnen</a>
+      </div>
+      <span class="small">Falls die App im Play Store nicht auftaucht, gibt es sie auch <a href="https://github.com/rustdesk/rustdesk/releases/download/1.5.1/rustdesk-1.5.1-universal-signed.apk">direkt als Datei (APK)</a>. Dafür muss man aber die Installation aus unbekannten Quellen erlauben, das machen wir dann gemeinsam.</span></li>
+    <li>Öffne die App und tippe unten auf <strong>„Freigeben“</strong> (Bildschirm teilen), dann auf <strong>„Dienst starten“</strong>. Das Handy fragt, ob die App den Bildschirm aufnehmen darf: <strong>erlauben</strong>.</li>
+    <li>Damit ich auch für dich tippen kann, muss beim ersten Mal noch <strong>„RustDesk Input“</strong> eingeschaltet werden. Die App führt dich in die Einstellungen unter „Bedienungshilfen“, dort den Schalter einschalten.</li>
+    <li>Lies mir <strong>ID</strong> und <strong>Passwort</strong> vor, die in der App stehen. Wenn eine Anfrage erscheint: <strong>„Akzeptieren“</strong>.</li>
+    <li>Wenn wir fertig sind: in der App auf <strong>„Dienst beenden“</strong> tippen.</li>
+  </ol>
+  </section>
+
+  <section>
+  <h2>Am iPhone oder iPad</h2>
+  <p>Ein iPhone kann man mit keiner App fernsteuern, das erlaubt Apple nicht. Es geht aber direkt über <strong>FaceTime</strong>:</p>
+  <ol>
+    <li>Mein Kontakt muss in deinem iPhone gespeichert sein.</li>
+    <li>Ruf mich per <strong>FaceTime</strong> an.</li>
+    <li>Tippe im Anruf auf das Symbol zum Teilen (ein kleiner Bildschirm mit einer Person davor) und dann auf <strong>„Meinen Bildschirm teilen“</strong>.</li>
+    <li>Ich schicke dir eine Anfrage, damit ich steuern darf: auf <strong>„Erlauben“</strong> tippen.</li>
+    <li>Du kannst trotzdem jederzeit selbst tippen, du hast immer Vorrang. Zum Beenden auf <strong>„Stopp“</strong> tippen oder einfach auflegen.</li>
+  </ol>
+  <p class="note">Das Steuern funktioniert erst ab <strong>iOS 18</strong>, und zwar auf beiden Geräten. Nachsehen kannst du das unter Einstellungen → Allgemein → Info → iOS-Version. Mit einer älteren Version kann ich deinen Bildschirm nur sehen und dir sagen, wo du tippen musst.</p>
+  <p class="note"><strong>Ohne FaceTime geht es auch mit WhatsApp</strong>, dann aber nur zum Ansehen: Ruf mich per WhatsApp-<strong>Videoanruf</strong> an, tippe unten auf das Symbol zum Bildschirm teilen und dann auf <strong>„Übertragung starten“</strong>. Achtung, ich sehe dann alles auf deinem Bildschirm, auch Benachrichtigungen, die hereinkommen.</p>
+  </section>
+
+  <section>
+  <h2>Wenn etwas nicht klappt</h2>
+  <p>Kein Stress, ruf mich einfach an. Das meiste lässt sich am Telefon lösen, auch wenn die Verbindung nicht gleich funktioniert.</p>
+  </section>
+</main>
+</body>
+</html>
